@@ -1,0 +1,28 @@
+{
+	"mappings": [
+		{
+			"src": 								"assets/scss",
+			"dest": 							"assets/css"
+		}
+	],
+
+	"ignores": [
+		"*.css",
+		"*.js"
+	],
+
+	"options": {
+		"outputStyle": 					"compressed",
+		"lineComments": 				false,
+		"debugInfo": 						false,
+		"sourceMap": 						false,
+		"unixNewlines":	  			false,
+    "autoprefix":	 					false
+	},
+
+	"customOptions": [],
+
+	"includePaths": [],
+
+	"requireLibs": []
+}

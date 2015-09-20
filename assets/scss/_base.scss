@@ -1,0 +1,47 @@
+@import "variables";
+@import "bootstrap";
+@import "font-awesome";
+@import "animate-custom"; // originally from ascends template's animate custom.css
+@import "bootstrapValidator";
+
+// originally from ascend template's main.css
+::-moz-selection {
+ background: #f2c2c9;
+ color: #a4003a;
+ text-shadow: none;
+}
+
+::selection {
+	background: #f2c2c9;
+	color: #a4003a;
+	text-shadow: none;
+}
+
+hr {
+	display: block;
+	height: 3px;
+	border: 0;
+	margin: 3em 0;
+	padding: 0;
+	background-image: -webkit-linear-gradient(left, #fff, #e6e6e6, #fff);
+	background-image: -moz-linear-gradient(left, #fff, #e6e6e6, #fff);
+	background-image: -ms-linear-gradient(left, #fff, #e6e6e6, #fff);
+	background-image: -o-linear-gradient(left, #fff, #e6e6e6, #fff);
+	width: 50%;
+	left: 25%;
+	position: relative;
+	border: none;
+}
+
+textarea {
+	resize: vertical;
+}
+
+html {
+  height:100%;
+}
+
+body {
+  height:100%;
+  margin:0px;
+}
