@@ -13,22 +13,23 @@ $(function() {
           notEmpty: {
             message: "Name should not be blank"
           }
-        },
-        email: {
-          validators: {
-            notEmpty: {
-              message: "Email should not be blank"
-            },
-            emailAddress: {
-              message: "Enter a valid email address"
-            }
+        }
+      },
+      email: {
+        validators: {
+          notEmpty: {
+            message: "Email should not be blank"
           },
-          message: {
-            validators: {
-              notEmpty: {
-                message: "Message should not be blank"
-              }
-            }
+          regexp: {
+            regexp: /^[\w+\-.]+@[a-z\d\-.]+\.[a-z]+$/i,
+            message: "Enter a valid email address"
+          }
+        }
+      },
+      message: {
+        validators: {
+          notEmpty: {
+            message: "Message should not be blank"
           }
         }
       }

@@ -7,12 +7,8 @@
 <meta name="author" content="">
 <title>OPTIMA | IM Conference + Competition 2015</title>
 
-<!-- modifed version of: http://www.templategarden.com/template/ascend-free-one-page-bootstrap-template/ -->
 <link href="assets/css/application.css" rel="stylesheet">
 
-<!-- Custom CSS -->
-<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/modernizr.custom.min.js"></script>
 
@@ -27,14 +23,17 @@
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
 <?php
-  include '_navigation.php';
-  include 'sections/_home.php';
-  include 'sections/_about.php';
-  include 'sections/_faq.php';
-  include 'sections/_register.php';
-  include 'sections/_contact.php';
-  include 'sections/_footer.php';
-?>
+  include 'sections/_navigation.php';
+  include 'sections/_home.php'; ?>
+
+<div class="container">
+  <?php
+    include 'sections/_about.php';
+    include 'sections/_faq.php';
+    include 'sections/_register.php';
+    include 'sections/_contact.php';
+    include 'sections/_footer.php'; ?>
+</div>
 
 <!-- Bootstrap core JavaScript
     ================================================== -->

@@ -17,7 +17,7 @@
 		"debugInfo": 						false,
 		"sourceMap": 						false,
 		"unixNewlines":	  			false,
-    "autoprefix":	 					false
+    "autoprefix":	 					true
 	},
 
 	"customOptions": [],

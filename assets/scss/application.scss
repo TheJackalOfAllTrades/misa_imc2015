@@ -1,12 +1,57 @@
-@import "base";
-// stuff
-img {
-  vertical-align: middle;
+@import "variables";
+@import "fonts";
+@import "vendor/bootstrap";
+@import "vendor/font-awesome";
+@import "vendor/animate-custom"; // originally from ascends template's animate custom.css
+@import "vendor/bootstrapValidator";
+
+// general rules
+textarea {
+	resize: vertical;
 }
 
-// our custom css
+::-moz-selection {
+ background: #f2c2c9;
+ color: #a4003a;
+ text-shadow: none;
+}
+
+::selection {
+	background: #f2c2c9;
+	color: #a4003a;
+	text-shadow: none;
+}
+
+// general but more specific
+section.row {
+  padding-top: $navbar-height;
+  min-height: 50vh;
+
+  h1, h2, h3, h4, h5, h6 {
+		font-family: $font-family-featured;
+    text-align: center;
+  }
+}
+
+// very specific
+// --navbar
+.navbar-default {
+  box-shadow: 0 0 3px darken($navbar-default-bg, 6.5%);
+	font-family: $font-family-navbar;
+	letter-spacing: ($font-size-navbar-brand * 0.07);
+  .container .navbar-header .navbar-brand {
+		font-family: $font-family-featured;
+		font-size: $font-size-navbar-brand;
+		span {
+      color: $brand-primary-dark;
+		}
+  }
+}
+
+
+// --frontscreen
 #home {
-  height: 100%;
+  height: 100vh; // the entire viewable screen
   background: url(../img/header_bg.jpg) no-repeat center top;
   background-attachment: relative;
   background-position: center center;
@@ -14,25 +59,26 @@ img {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  //vertical align
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
 
+  //vertical align
   display: flex;
   align-items: center;
+
   .container {
-    img {
-      height: 5em;
+    .misalogo {
+      width: 14em;
     }
     h1 {
+			font-family: $font-family-featured;
+      font-size: $font-size-featured;
+			letter-spacing: ($font-size-featured * 0.07);
       text-align: center;
-      font-size: 6em;
       margin-top: 0px;
       span { color: $brand-primary-dark; }
     }
     p {
       text-align: center;
-      font-size: 22px;
+      font-size: $font-size-featured-sub;
       font-weight: 300;
       letter-spacing: 1px;
     }
@@ -50,27 +96,29 @@ img {
   }
 }
 
-.navbar-default {
-  box-shadow: 0 0 3px darken($navbar-default-bg, 6.5%);
-  .container {
-    font-weight: bold;
-    .navbar-header .navbar-brand span {
-      color: $brand-primary-dark;
-    }
-  }
+
+// --contact section
+#contact {
+  text-align: center; // center align address
 }
 
-// media queries
+#misa-address {
+  text-align: left;
+}
+
+#misa-address, #misa-email {
+  display: inline-block; // center align address
+}
+
+
+// --media queries
 @media screen and (max-width:769px) {
   #home .container {
-    img {
-      height: 3em;
-    }
     h1 {
-      font-size: 3.5em;
+      font-size: ($font-size-featured / 2);
     }
     p {
-      font-size: 20px;
+      font-size: ($font-size-featured-sub / 2);
     }
   }
 }
