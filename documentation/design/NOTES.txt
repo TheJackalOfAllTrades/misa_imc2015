@@ -1,0 +1,5 @@
+FROM PAU:
+
+-flower photo is mine but it's just a placeholder
+-keyboard photo not mine, also just a placeholder
+-need photos from MISA photogs
