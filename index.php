@@ -7,6 +7,7 @@
 <meta name="author" content="">
 <title>OPTIMA | IM Conference + Competition 2015</title>
 
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 <link href="assets/css/application.css" rel="stylesheet">
 
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
