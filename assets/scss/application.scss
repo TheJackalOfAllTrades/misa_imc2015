@@ -2,8 +2,12 @@
 @import "fonts";
 @import "vendor/bootstrap";
 @import "vendor/font-awesome";
-@import "vendor/animate-custom"; // originally from ascends template's animate custom.css
+@import "vendor/animate-custom"; // originally from ascend template's animate custom.css
 @import "vendor/bootstrapValidator";
+
+// custom variables here
+$example-for-declaring-variable:				#fff;
+$passing-variable-data-to-another:			$example-for-declaring-variable;
 
 // general rules
 textarea {
@@ -28,7 +32,7 @@ section.row {
   min-height: 50vh;
 
   h1, h2, h3, h4, h5, h6 {
-		font-family: $font-family-featured;
+		font-family: $font-family-base;
     text-align: center;
   }
 }
@@ -37,13 +41,13 @@ section.row {
 // --navbar
 .navbar-default {
   box-shadow: 0 0 3px darken($navbar-default-bg, 6.5%);
-	font-family: $font-family-navbar;
-	letter-spacing: ($font-size-navbar-brand * 0.07);
+	font-family: $font-family-base;
+	letter-spacing: ($font-size-base * 0.07);
   .container .navbar-header .navbar-brand {
-		font-family: $font-family-featured;
-		font-size: $font-size-navbar-brand;
+		font-family: $font-family-base;
+		font-size: $font-size-base;
 		span {
-      color: $brand-primary-dark;
+      color: $brand-primary;
 		}
   }
 }
@@ -66,19 +70,19 @@ section.row {
 
   .container {
     .misalogo {
-      width: 14em;
+      width: ($font-size-h1 * 3.3);
     }
     h1 {
-			font-family: $font-family-featured;
-      font-size: $font-size-featured;
-			letter-spacing: ($font-size-featured * 0.07);
+			font-family: $font-family-base;
+      font-size: $font-size-h1;
+			letter-spacing: ($font-size-h1 * 0.07);
       text-align: center;
       margin-top: 0px;
-      span { color: $brand-primary-dark; }
+      span { color: $brand-primary; }
     }
     p {
       text-align: center;
-      font-size: $font-size-featured-sub;
+      font-size: $font-size-base;
       font-weight: 300;
       letter-spacing: 1px;
     }
@@ -114,11 +118,14 @@ section.row {
 // --media queries
 @media screen and (max-width:769px) {
   #home .container {
+    .misalogo {
+      width: ($font-size-h1 * 3.3 / 2);
+    }
     h1 {
-      font-size: ($font-size-featured / 2);
+      font-size: ($font-size-h1 / 2);
     }
     p {
-      font-size: ($font-size-featured-sub / 2);
+      font-size: ($font-size-base / 2);
     }
   }
 }

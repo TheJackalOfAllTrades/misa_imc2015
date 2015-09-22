@@ -7,9 +7,10 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#home" class="smoothScroll">Home</a></li>
         <li><a href="#about" class="smoothScroll">About</a></li>
+        <li><a href="#speakers" class="smoothScroll">IMC Speakers</a></li>
         <li><a href="#faq" class="smoothScroll">FAQ</a></li>
-        <li><a href="#register" class="smoothScroll">Register</a></li>
-        <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        <li><a href="#register" class="smoothScroll">Registration</a></li>
+        <li><a href="#contact" class="smoothScroll">Contact Us</a></li>
       </ul>
     </div>
   </div>

@@ -30,6 +30,7 @@
 <div class="container">
   <?php
     include 'sections/_about.php';
+    include 'sections/_speakers.php';
     include 'sections/_faq.php';
     include 'sections/_register.php';
     include 'sections/_contact.php';
