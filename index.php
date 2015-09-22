@@ -23,18 +23,23 @@
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
-<?php
-  include 'sections/_navigation.php';
-  include 'sections/_home.php'; ?>
-
-<div class="container">
+<div id="loader">
+  <i class="fa fa-circle-o-notch fa-spin"></i>
+</div>
+<div id="page-content">
   <?php
-    include 'sections/_about.php';
-    include 'sections/_speakers.php';
-    include 'sections/_faq.php';
-    include 'sections/_register.php';
-    include 'sections/_contact.php';
-    include 'sections/_footer.php'; ?>
+    include 'sections/_navigation.php';
+    include 'sections/_home.php'; ?>
+
+  <div class="container">
+    <?php
+      include 'sections/_about.php';
+      include 'sections/_speakers.php';
+      include 'sections/_faq.php';
+      include 'sections/_register.php';
+      include 'sections/_contact.php';
+      include 'sections/_footer.php'; ?>
+  </div>
 </div>
 
 <!-- Bootstrap core JavaScript

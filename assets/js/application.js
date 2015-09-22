@@ -36,8 +36,27 @@ $(function() {
     }
   };
 
+  // start loader screen
+  $(window).on("load", function() {
+    // fadeout only when everything (images, fonts, etc.) is downloaded
+    $("#loader").fadeOut(800);
+  });
+  // end loader screen
+
+  // start hideNavbar
+	$("#navbar-main").hide();
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			$("#navbar-main").fadeIn();
+		} else {
+			$("#navbar-main").fadeOut();
+		}
+	});
+  // end hideNavbar
+
   $("#contactForm").bootstrapValidator(document)
-  .on("success.form.bv", function(e) {
+    .on("success.form.bv", function(e) {
     // Prevent form submission
     e.preventDefault();
 
@@ -69,16 +88,4 @@ $(function() {
     );
   });
   // end bootstrapValidator
-
-  // start hideNavbar
-	$("#navbar-main").hide();
-
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 100) {
-			$("#navbar-main").fadeIn();
-		} else {
-			$("#navbar-main").fadeOut();
-		}
-	});
-  // end hideNavbar
 });
