@@ -1,7 +1,7 @@
 <section id="contact"><div class="container">
   <h1>Contact Us</h1>
 
-  <div class="col-md-12">
+  <div id="contactInfo" class="col-md-12">
     <div class="row">
       <div class="col-md-6">
         <i class="fa fa-map-marker fa-2x"></i>

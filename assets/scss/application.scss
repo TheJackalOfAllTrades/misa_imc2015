@@ -35,6 +35,7 @@ textarea {
 // general but more specific
 section	 {
   padding-top: $navbar-height;
+  padding-bottom: ($navbar-height / 2);
   min-height: 100vh;
 
   h1, h2, h3, h4, h5, h6 {
@@ -161,6 +162,14 @@ section	 {
 #contact {
 	color: #000;
   text-align: center; // center align address
+	h1 { margin-bottom: 20px }
+	.fa {
+		color: $brand-primary;
+		margin-bottom: 20px;
+	}
+	#contactInfo {
+		margin-bottom: 60px;
+	}
 }
 
 #misa-address {
@@ -169,6 +178,21 @@ section	 {
 
 #misa-address, #misa-email {
   display: inline-block; // center align address
+}
+
+#footer {
+	background-color: #42413f;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: #999;
+	a {
+		color: #999;
+		&:hover, &:focus {
+			color: $brand-primary;
+		}
+	}
 }
 
 
