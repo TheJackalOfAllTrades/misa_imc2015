@@ -1,6 +1,6 @@
-<section id="about" class="row">
+<section id="about"><div class="container">
   <div class="col-md-12">
-    <h2>About us</h2>
+    <h1>About us</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipiscing ilit.</p>
   </div>
-</section>
+</div></section>

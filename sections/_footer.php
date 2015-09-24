@@ -1,4 +1,4 @@
-<footer class="footer row">
+<footer class="footer">
   <div class="col-md-8"><span class="copyright">Copyright &copy; 2015 Ateneo MISA</a></span></div>
   <div class="col-md-4">
     <ul class="list-inline social-buttons">

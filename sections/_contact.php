@@ -1,5 +1,5 @@
-<section id="contact" class="row">
-  <h2>Contact Us</h2>
+<section id="contact"><div class="container">
+  <h1>Contact Us</h1>
 
   <div class="col-md-12">
     <div class="row">
@@ -41,4 +41,4 @@
       <button class="btn btn-lg btn-primary" type="submit">Send Message</button>
     </div>
   </form>
-</section>
+</div></section>

@@ -39,7 +39,7 @@ $(function() {
   // start loader screen
   $(window).on("load", function() {
     // fadeout only when everything (images, fonts, etc.) is downloaded
-    $("#loader").fadeOut(800);
+    $("#loader").delay(500).fadeOut(800);
   });
   // end loader screen
 

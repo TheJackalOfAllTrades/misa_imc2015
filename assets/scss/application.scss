@@ -6,8 +6,14 @@
 @import "vendor/bootstrapValidator";
 
 // custom variables here
-$example-for-declaring-variable:				#fff;
-$passing-variable-data-to-another:			$example-for-declaring-variable;
+$font-family-featured:						"Guild of Professional Actors", Helvetica, Arial, sans-serif;
+
+// custom mixins here
+@mixin optima-text() {
+	font-family: $font-family-featured;
+	color: #fff;
+	span { color: #a4f8c3; }
+}
 
 // general rules
 textarea {
@@ -27,9 +33,9 @@ textarea {
 }
 
 // general but more specific
-section.row {
+section	 {
   padding-top: $navbar-height;
-  min-height: 50vh;
+  min-height: 100vh;
 
   h1, h2, h3, h4, h5, h6 {
 		font-family: $font-family-base;
@@ -41,13 +47,20 @@ section.row {
 // --navbar
 .navbar-default {
   box-shadow: 0 0 3px darken($navbar-default-bg, 6.5%);
-	font-family: $font-family-base;
-	letter-spacing: ($font-size-base * 0.07);
-  .container .navbar-header .navbar-brand {
-		font-family: $font-family-base;
-		font-size: $font-size-base;
-		span {
-      color: $brand-primary;
+  .container {
+		.navbar-collapse {
+      text-transform: uppercase;
+			.navbar-text {
+				font-size: $font-size-small;
+				font-style: italic;
+				span { font-weight: bold; }
+			}
+		}
+		.navbar-header .navbar-brand {
+			color: $brand-primary;
+			span { color: #5ad797; }
+			font-size: 42px;
+			font-family: $font-family-featured;
 		}
   }
 }
@@ -58,15 +71,15 @@ section.row {
 	z-index: 2000;
 	height: 100vh;
 	width: 100vw;
-  background: url(../img/loader_bg.png) no-repeat center top;
-  background-attachment: relative;
+  background-image: url(../img/loader_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
   background-size: cover;
   display: flex;
 	justify-content: center;
   align-items: center;
 
 	.fa {
-		font-size: 100px;
 		color: #a4f8c3;
 	}
 }
@@ -75,12 +88,15 @@ section.row {
 // --frontscreen
 #home {
   height: 100vh; // the entire viewable screen
-  background: url(../img/header_bg.png) no-repeat center top;
-  background-attachment: relative;
-  background-size: cover;
+	background-image: url(../img/header_bg.jpg);
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
+	margin: 0px;
 
   //vertical align
   display: flex;
@@ -88,39 +104,62 @@ section.row {
 
   .container {
     .misalogo {
-      width: ($font-size-h1 * 3.3);
+      width: 150px;
+			height: auto;
+			margin: 0px 0px 20px;
     }
-    h1 {
-			font-family: $font-family-base;
-      font-size: $font-size-h1;
-			letter-spacing: ($font-size-h1 * 0.07);
-      text-align: center;
-      margin-top: 0px;
-      span { color: $brand-primary; }
-    }
+		a img {
+			width: 75px;
+			height: auto;
+		}
+    h1 { @include optima-text(); }
     p {
-      text-align: center;
-      font-size: $font-size-base;
       font-weight: 300;
-      letter-spacing: 1px;
-    }
-    .btn {
-      color: #fff;
-      background-color: transparent;
-      border: 1px solid #fff;
-      &:hover, &:focus {
-        color: #555;
-        background-color: #fff;
-        outline: 0px;
-        border: 1px solid #fff;
-      }
+			font-style: italic;
+			margin: 0px 0px 20px;
+			span {
+	      font-weight: 700;
+			}
     }
   }
 }
 // --end frontscreen
 
+// --about
+#about {
+	color: #000;
+}
+// --end about
+
+// --speakers
+#speakers {
+	background-image: url(../img/header_bg.jpg);
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+// --end speakers
+
+// --faq
+#faq {
+	color: #000;
+}
+// --end faq
+
+// --register
+#register {
+	background-image: url(../img/header_bg.jpg);
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+// --end register
+
 // --contact section
 #contact {
+	color: #000;
   text-align: center; // center align address
 }
 
@@ -136,14 +175,11 @@ section.row {
 // --media queries
 @media screen and (max-width:769px) {
   #home .container {
-    .misalogo {
-      width: ($font-size-h1 * 3.3 / 2);
-    }
     h1 {
-      font-size: ($font-size-h1 / 2);
+      font-size: (150px / 2);
     }
     p {
-      font-size: ($font-size-base / 2);
+      font-size: (36px / 2);
     }
   }
 }

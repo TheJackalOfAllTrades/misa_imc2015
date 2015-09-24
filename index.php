@@ -7,7 +7,7 @@
 <meta name="author" content="">
 <title>OPTIMA | IM Conference + Competition 2015</title>
 
-<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,300italic,700,700italic,400italic" rel="stylesheet" type="text/css">
 <link href="assets/css/application.css" rel="stylesheet">
 
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
@@ -24,22 +24,18 @@
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
 <div id="loader">
-  <i class="fa fa-circle-o-notch fa-spin"></i>
+  <i class="fa fa-5x fa-circle-o-notch fa-spin"></i>
 </div>
 <div id="page-content">
   <?php
-    include 'sections/_navigation.php';
-    include 'sections/_home.php'; ?>
-
-  <div class="container">
-    <?php
-      include 'sections/_about.php';
-      include 'sections/_speakers.php';
-      include 'sections/_faq.php';
-      include 'sections/_register.php';
-      include 'sections/_contact.php';
-      include 'sections/_footer.php'; ?>
-  </div>
+    include "sections/_navigation.php";
+    include "sections/_home.php";
+    include "sections/_about.php";
+    include "sections/_speakers.php";
+    include "sections/_faq.php";
+    include "sections/_register.php";
+    include "sections/_contact.php";
+    include "sections/_footer.php"; ?>
 </div>
 
 <!-- Bootstrap core JavaScript

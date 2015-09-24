@@ -1,6 +1,6 @@
-<section id="faq" class="row">
+<section id="faq"><div class="container">
   <div class="col-md-12">
-    <h2>Frequently Asked Questions</h2>
+    <h1>Frequently Asked Questions</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipiscing ilit.</p>
   </div>
-</section>
+</div></section>
