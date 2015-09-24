@@ -1,6 +1,8 @@
 # MISA IMC 2015 Website
 This README.md file contains details on how to develop the MISA IMC 2015 website.
 
+*PLEASE DON'T FORGET TO REPLACE THE ADMIN EMAIL WITH THE IMC EMAIL*
+
 ## Prerequisites
 * code editor - e.g. Sublime Text 3, but I highly recommend [Atom](atom.io)
 because it has built-in `.scss` highlighting
