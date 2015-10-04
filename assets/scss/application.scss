@@ -7,6 +7,7 @@
 
 // custom variables here
 $font-family-featured:						"Guild of Professional Actors", Helvetica, Arial, sans-serif;
+$secondary-color: color("white") !default;
 
 // custom mixins here
 @mixin optima-text() {
@@ -24,6 +25,21 @@ textarea {
  background: #f2c2c9;
  color: #a4003a;
  text-shadow: none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #eaeaea !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #eaeaea !important;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #eaeaea !important;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #eaeaea !important;
 }
 
 ::selection {
@@ -155,6 +171,33 @@ section	 {
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	//background: white;
+}
+
+#register {
+	form {
+		margin-top: 25px;
+
+		input, textarea {
+			border-color: #b2dfdb;
+		}
+
+	}
+
+	label {
+		color: white!important;
+	}
+}
+
+.tabs {
+	background-color: transparent!important;
+	.tab a {
+		color: #e0f2f1!important;
+		&:hover {
+			color: lighten(#e0f2f1, 20%);
+		}
+	}
+	.indicator {background-color: #b2dfdb!important;}
 }
 // --end register
 
