@@ -22,17 +22,17 @@
 
   <form id="contactForm" class="col-md-8 col-md-offset-2" action="scripts/contact.php" method="post">
     <div class="row">
-      <div class="col s6 input-field">
+      <div class="col-md-6 form-group">
         <label class="sr-only" for="name">Name</label>
         <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
       </div>
-      <div class="col s6 input-field">
+      <div class="col-md-6 form-group">
         <label class="sr-only" for="name">Email Address</label>
         <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
       </div>
     </div>
     <div class="row">
-      <div class="col s12 form-group">
+      <div class="col-md-12 form-group">
         <label class="sr-only" for="message">Message</label>
         <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5" required></textarea>
       </div>
