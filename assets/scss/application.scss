@@ -1,6 +1,6 @@
 @import "variables";
 @import "fonts";
-@import "vendor/materialize";
+@import "vendor/_materialize.scss";
 @import "vendor/bootstrap";
 @import "vendor/font-awesome";
 @import "vendor/animate-custom"; // originally from ascend template's animate custom.css
@@ -173,20 +173,24 @@ section	 {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	//background: white;
+
 }
 
 #register {
 	form {
 		margin-top: 25px;
 
+
 		input, textarea {
 			border-color: #b2dfdb;
+			font-size: 1.15em!important;
 		}
 
 	}
 
 	label {
 		color: white!important;
+		font-size: 1em !important;
 	}
 }
 
@@ -213,6 +217,10 @@ section	 {
 	}
 	#contactInfo {
 		margin-bottom: 60px;
+	}
+
+	form input,textarea {
+		font-size: 1.3em!important;
 	}
 }
 

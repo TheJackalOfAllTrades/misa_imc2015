@@ -33,7 +33,6 @@ if(isset($_POST["name"]) && isset($_POST["nickname"]) && isset($_POST["birthday"
   $isValidName     = preg_match("/^.*\S.*$/", $name);
 
   if( !$isValidEmail)   { array_push($errors, ["email", "Email is not valid"]); }
-  if( !$isValidName)    { array_push($errors, ["name", "Name should not be blank"]); }
 
   // send email and verify if sent
   if(empty($errors)) {
