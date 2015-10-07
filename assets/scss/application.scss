@@ -145,7 +145,25 @@ section	 {
 
 // --faq
 #faq {
-	color: #000;
+	background-image: url(../img/header_bg.jpg);
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	//background: white;
+}
+#faq{
+	color: #fff;
+	div {
+		border-color: white!important;
+		font-size: 1.05em !important;
+		background-color: transparent;
+		}
+
+	.collapsible{
+		background-color: transparent!important;
+		
+	}
 }
 // --end faq
 
