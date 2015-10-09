@@ -144,9 +144,22 @@ section	 {
 // --end speakers
 
 // --faq
-#faq {
-	color: #000;
 }
+#faq{
+	color: #fff;
+	div {
+		border-color: white!important;
+		font-size: 1.05em !important;
+		background-color: transparent;
+
+		}
+
+	.collapsible{
+		background-color: transparent!important;
+
+	}
+}
+
 // --end faq
 
 // --register
